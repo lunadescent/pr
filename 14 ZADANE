@@ -1,0 +1,5 @@
+for i in '0123456789ABCDEFGHI':
+    a = f'98897{i}21'
+    b = f'2{i}923'
+    if (int(a, 19) + int(b, 19)) % 18 == 0:
+        print(i, (int(a, 19) + int(b, 19)) / 18 )
