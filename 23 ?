@@ -1,0 +1,9 @@
+def f(n, k):
+    if n == k:
+        return 1
+    elif n > k or n == 22:
+        return 0
+    else:
+        return f(n + 3, k) + f(n + 4, k)
+
+print(f(16, 38 ))
