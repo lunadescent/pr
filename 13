@@ -1,0 +1,10 @@
+from ipaddress import *'''
+'''
+net = ip_network(f'122.159.68.144/255.255.255.240', 0)
+
+k = 0
+for ip in net:
+    ip2 = bin(int(ip))[2:].zfill(32)
+    if ip2.count('0') % 3 != 0:
+        k += 1
+print(k)
