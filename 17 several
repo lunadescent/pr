@@ -10,3 +10,19 @@ for i in range(len(s)-1):
         if (s[i]+s[i+1]) > mx:
             mx = s[i]+s[i+1]
 print(k, mx)
+
+#2 huinya
+
+f = open('17_17873.txt')
+s = [int(x) for x in f]
+mn = min(s)
+mx = -1
+k = 0
+for i in range(len(s)-1):
+    if s[i] % 16 == mn or s[i+1] % 16 == mn:
+        k += 1
+        if (s[i] + s[i+1]) > mx:
+
+            
+            mx = s[i] + s[i+1]
+print(k, mx)
